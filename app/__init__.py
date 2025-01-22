@@ -1,8 +1,5 @@
 from flask import Flask
-from .routes.views import views
+from routes.views import views
 
-def create_app():
-  app = Flask(__name__)
-  app.register_blueprint(views, url_prefix='/')
-  return app
-  
+app = Flask(__name__)
+app.register_blueprint(views, url_prefix='/')
