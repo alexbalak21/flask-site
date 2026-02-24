@@ -5,7 +5,7 @@ app = Flask(__name__)
 # Simple GET route
 @app.route("/", methods=["GET"])
 def hello_world():
-    return "<h1>Hello from Flask v2</h1>"
+    return "<h1>Hello from Flask v3</h1>"
 
 # GET API endpoint
 @app.route("/api/message", methods=["GET"])
